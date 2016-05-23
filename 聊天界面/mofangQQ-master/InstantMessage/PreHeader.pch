@@ -1,0 +1,36 @@
+//
+//  PreHeader.pch
+//  InstantMessage
+//
+//  Created by 林英伟 on 15/12/3.
+//  Copyright © 2015年 林英伟. All rights reserved.
+//
+
+#ifndef PreHeader_pch
+#define PreHeader_pch
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "Friend.h"
+#import "CommentDefine.h"
+#import "FriendGroup.h"
+#import "HeaderView.h"
+#import "MessageModel.h"
+#import "CellFrameModel.h"
+#import "NSString+Extension.h"
+#import "UIImage+ResizeImage.h"
+#import "MessageCell.h"
+#import "FriendGroupCell.h"
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+
+#import "AppDelegate.h"
+#import "PersonalInfor.h"
+#import "MenuHeaderView.h"
+#import "YLGIFImage.h"
+#import "YLImageView.h"
+#import "TitleBarView.h"
+#import "ICSDropShadowView.h"
+#import "ICSDrawerController.h"
+#import "MenuFooterView.h"
+#endif /* PreHeader_pch */
