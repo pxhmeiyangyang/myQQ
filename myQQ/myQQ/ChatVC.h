@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ChatVC.h
 //  myQQ
 //
 //  Created by pxh on 16/5/23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ChatVC : UIViewController
 
 @end
-
