@@ -38,7 +38,7 @@ static NSString* identifier = @"tableviewCell";
         _tableview            = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
         _tableview.dataSource = self;
         _tableview.delegate   = self;
-        [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass() bundle:<#(nullable NSBundle *)#>] forCellReuseIdentifier:identifier];
+//        [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([LinkManCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:identifier];
     }
     return _tableview;
 }
@@ -61,13 +61,10 @@ static NSString* identifier = @"tableviewCell";
 }
 
 -(UITableViewCell* )tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    LinkManCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-//    if (!cell) {
-////        cell = [[LinkManCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-//        cell = [LinkManCell getLinkManCell];
-//    }
-    LinkManCell* cell = [LinkManCell createLinkManCellWithTableView:tableView identifier:identifier];
-//    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    LinkManCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [LinkManCell viewFormXibBundle];
+    }
     return cell;
 }
 

@@ -19,5 +19,7 @@
 #define SCREEN_BOUND        [UIScreen mainScreen].bounds
 
 
+#include "UIView+Common.h"
+
 
 #endif /* PrefixHeader_pch */

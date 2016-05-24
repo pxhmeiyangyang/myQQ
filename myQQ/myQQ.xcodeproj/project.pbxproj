@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39AF6D6A2CD8D984D6FE95FD /* libPods-myQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D46414B451CEF3089016DD0D /* libPods-myQQ.a */; };
+		F10822901CF4738E00A15E3F /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F108228F1CF4738E00A15E3F /* UIView+Common.m */; };
 		F190F8291CF3E74C00B925CC /* LinkManVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F190F8281CF3E74C00B925CC /* LinkManVC.m */; };
 		F190F82D1CF3E77E00B925CC /* LinkManCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F190F82B1CF3E77E00B925CC /* LinkManCell.m */; };
 		F190F82E1CF3E77E00B925CC /* LinkManCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F190F82C1CF3E77E00B925CC /* LinkManCell.xib */; };
@@ -42,6 +43,8 @@
 		3CFD2CE3DC2FF08E85EDDDA6 /* Pods-myQQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myQQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-myQQ/Pods-myQQ.release.xcconfig"; sourceTree = "<group>"; };
 		4ABA5A6A39CE071C877E81C5 /* Pods-myQQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myQQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myQQ/Pods-myQQ.debug.xcconfig"; sourceTree = "<group>"; };
 		D46414B451CEF3089016DD0D /* libPods-myQQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myQQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F108228E1CF4738E00A15E3F /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		F108228F1CF4738E00A15E3F /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 		F190F8271CF3E74C00B925CC /* LinkManVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManVC.h; sourceTree = "<group>"; };
 		F190F8281CF3E74C00B925CC /* LinkManVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkManVC.m; sourceTree = "<group>"; };
 		F190F82A1CF3E77E00B925CC /* LinkManCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManCell.h; sourceTree = "<group>"; };
@@ -109,6 +112,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F10822841CF4719C00A15E3F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F108228E1CF4738E00A15E3F /* UIView+Common.h */,
+				F108228F1CF4738E00A15E3F /* UIView+Common.m */,
+			);
+			name = Category;
+			path = myQQ/Category;
+			sourceTree = "<group>";
+		};
 		F190F8261CF3E74C00B925CC /* LinkMan */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 		F1D47D711CF3224D006EA68C = {
 			isa = PBXGroup;
 			children = (
+				F10822841CF4719C00A15E3F /* Category */,
 				F1D47D7C1CF3224D006EA68C /* myQQ */,
 				F1D47D961CF3224E006EA68C /* myQQTests */,
 				F1D47DA11CF3224E006EA68C /* myQQUITests */,
@@ -374,6 +388,7 @@
 				F1D47D821CF3224D006EA68C /* AppDelegate.m in Sources */,
 				F1D47D7F1CF3224D006EA68C /* main.m in Sources */,
 				F190F82D1CF3E77E00B925CC /* LinkManCell.m in Sources */,
+				F10822901CF4738E00A15E3F /* UIView+Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

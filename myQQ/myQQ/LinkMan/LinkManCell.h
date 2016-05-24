@@ -10,6 +10,5 @@
 
 @interface LinkManCell : UITableViewCell
 
-+(instancetype)createLinkManCellWithTableView:(UITableView* )tableView identifier:(NSString* )identifier;
 
 @end

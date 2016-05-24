@@ -26,14 +26,6 @@
     _headImageView.layer.cornerRadius = CGRectGetWidth(_headImageView.frame) * 0.5;
 }
 
-+(instancetype)createLinkManCellWithTableView:(UITableView* )tableView identifier:(NSString* )identifier{
-    LinkManCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil]objectAtIndex:0];
-    }
-    return cell;
-}
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
