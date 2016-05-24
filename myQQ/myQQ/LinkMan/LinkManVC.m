@@ -7,6 +7,8 @@
 //
 
 #import "LinkManVC.h"
+#import "LinkManCell.h"
+
 
 @interface LinkManVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -15,6 +17,8 @@
 
 
 @end
+
+static NSString* identifier = @"tableviewCell";
 
 @implementation LinkManVC
 
@@ -34,6 +38,7 @@
         _tableview            = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
         _tableview.dataSource = self;
         _tableview.delegate   = self;
+        [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass() bundle:<#(nullable NSBundle *)#>] forCellReuseIdentifier:identifier];
     }
     return _tableview;
 }
@@ -41,7 +46,7 @@
 #pragma mark - tableview delagete
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
+    return 70;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -56,11 +61,13 @@
 }
 
 -(UITableViewCell* )tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+//    LinkManCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    if (!cell) {
+////        cell = [[LinkManCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+//        cell = [LinkManCell getLinkManCell];
+//    }
+    LinkManCell* cell = [LinkManCell createLinkManCellWithTableView:tableView identifier:identifier];
+//    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
     return cell;
 }
 

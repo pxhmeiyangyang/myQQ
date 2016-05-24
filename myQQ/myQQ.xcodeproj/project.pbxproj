@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		39AF6D6A2CD8D984D6FE95FD /* libPods-myQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D46414B451CEF3089016DD0D /* libPods-myQQ.a */; };
+		F190F8291CF3E74C00B925CC /* LinkManVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F190F8281CF3E74C00B925CC /* LinkManVC.m */; };
+		F190F82D1CF3E77E00B925CC /* LinkManCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F190F82B1CF3E77E00B925CC /* LinkManCell.m */; };
+		F190F82E1CF3E77E00B925CC /* LinkManCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F190F82C1CF3E77E00B925CC /* LinkManCell.xib */; };
 		F1D47D7F1CF3224D006EA68C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D47D7E1CF3224D006EA68C /* main.m */; };
 		F1D47D821CF3224D006EA68C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D47D811CF3224D006EA68C /* AppDelegate.m */; };
 		F1D47D881CF3224D006EA68C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D47D861CF3224D006EA68C /* Main.storyboard */; };
@@ -16,7 +19,6 @@
 		F1D47D981CF3224E006EA68C /* myQQTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D47D971CF3224E006EA68C /* myQQTests.m */; };
 		F1D47DA31CF3224E006EA68C /* myQQUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D47DA21CF3224E006EA68C /* myQQUITests.m */; };
 		F1D47DB51CF3294A006EA68C /* ChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D47DB41CF3294A006EA68C /* ChatVC.m */; };
-		F1D47DB81CF32AFF006EA68C /* LinkManVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D47DB71CF32AFF006EA68C /* LinkManVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		3CFD2CE3DC2FF08E85EDDDA6 /* Pods-myQQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myQQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-myQQ/Pods-myQQ.release.xcconfig"; sourceTree = "<group>"; };
 		4ABA5A6A39CE071C877E81C5 /* Pods-myQQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myQQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myQQ/Pods-myQQ.debug.xcconfig"; sourceTree = "<group>"; };
 		D46414B451CEF3089016DD0D /* libPods-myQQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myQQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F190F8271CF3E74C00B925CC /* LinkManVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManVC.h; sourceTree = "<group>"; };
+		F190F8281CF3E74C00B925CC /* LinkManVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkManVC.m; sourceTree = "<group>"; };
+		F190F82A1CF3E77E00B925CC /* LinkManCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManCell.h; sourceTree = "<group>"; };
+		F190F82B1CF3E77E00B925CC /* LinkManCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkManCell.m; sourceTree = "<group>"; };
+		F190F82C1CF3E77E00B925CC /* LinkManCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkManCell.xib; sourceTree = "<group>"; };
 		F1D47D7A1CF3224D006EA68C /* myQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D47D7E1CF3224D006EA68C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1D47D801CF3224D006EA68C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,8 +63,6 @@
 		F1D47DA41CF3224E006EA68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1D47DB31CF3294A006EA68C /* ChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatVC.h; sourceTree = "<group>"; };
 		F1D47DB41CF3294A006EA68C /* ChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatVC.m; sourceTree = "<group>"; };
-		F1D47DB61CF32AFF006EA68C /* LinkManVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManVC.h; sourceTree = "<group>"; };
-		F1D47DB71CF32AFF006EA68C /* LinkManVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkManVC.m; sourceTree = "<group>"; };
 		F1D47DB91CF32C2F006EA68C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +109,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F190F8261CF3E74C00B925CC /* LinkMan */ = {
+			isa = PBXGroup;
+			children = (
+				F190F8271CF3E74C00B925CC /* LinkManVC.h */,
+				F190F8281CF3E74C00B925CC /* LinkManVC.m */,
+				F190F82A1CF3E77E00B925CC /* LinkManCell.h */,
+				F190F82B1CF3E77E00B925CC /* LinkManCell.m */,
+				F190F82C1CF3E77E00B925CC /* LinkManCell.xib */,
+			);
+			path = LinkMan;
+			sourceTree = "<group>";
+		};
 		F1D47D711CF3224D006EA68C = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +146,7 @@
 		F1D47D7C1CF3224D006EA68C /* myQQ */ = {
 			isa = PBXGroup;
 			children = (
+				F190F8261CF3E74C00B925CC /* LinkMan */,
 				F1D47D801CF3224D006EA68C /* AppDelegate.h */,
 				F1D47D811CF3224D006EA68C /* AppDelegate.m */,
 				F1D47D861CF3224D006EA68C /* Main.storyboard */,
@@ -138,8 +156,6 @@
 				F1D47D7D1CF3224D006EA68C /* Supporting Files */,
 				F1D47DB31CF3294A006EA68C /* ChatVC.h */,
 				F1D47DB41CF3294A006EA68C /* ChatVC.m */,
-				F1D47DB61CF32AFF006EA68C /* LinkManVC.h */,
-				F1D47DB71CF32AFF006EA68C /* LinkManVC.m */,
 			);
 			path = myQQ;
 			sourceTree = "<group>";
@@ -279,6 +295,7 @@
 			files = (
 				F1D47D8D1CF3224D006EA68C /* LaunchScreen.storyboard in Resources */,
 				F1D47D8A1CF3224D006EA68C /* Assets.xcassets in Resources */,
+				F190F82E1CF3E77E00B925CC /* LinkManCell.xib in Resources */,
 				F1D47D881CF3224D006EA68C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,9 +370,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1D47DB51CF3294A006EA68C /* ChatVC.m in Sources */,
-				F1D47DB81CF32AFF006EA68C /* LinkManVC.m in Sources */,
+				F190F8291CF3E74C00B925CC /* LinkManVC.m in Sources */,
 				F1D47D821CF3224D006EA68C /* AppDelegate.m in Sources */,
 				F1D47D7F1CF3224D006EA68C /* main.m in Sources */,
+				F190F82D1CF3E77E00B925CC /* LinkManCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

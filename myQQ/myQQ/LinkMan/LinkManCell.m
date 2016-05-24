@@ -8,7 +8,31 @@
 
 #import "LinkManCell.h"
 
+@interface LinkManCell()
+
+@property (weak, nonatomic) IBOutlet UIImageView *headImageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *nickNameLable;
+
+
+@end
+
 @implementation LinkManCell
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    //在这里做界面的适配和重新布局
+    _headImageView.layer.masksToBounds = YES;
+    _headImageView.layer.cornerRadius = CGRectGetWidth(_headImageView.frame) * 0.5;
+}
+
++(instancetype)createLinkManCellWithTableView:(UITableView* )tableView identifier:(NSString* )identifier{
+    LinkManCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil]objectAtIndex:0];
+    }
+    return cell;
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
