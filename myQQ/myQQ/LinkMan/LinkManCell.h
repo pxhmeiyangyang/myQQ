@@ -10,5 +10,6 @@
 
 @interface LinkManCell : UITableViewCell
 
++(CGFloat)getCellHeight;
 
 @end

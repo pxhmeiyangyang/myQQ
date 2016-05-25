@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		39AF6D6A2CD8D984D6FE95FD /* libPods-myQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D46414B451CEF3089016DD0D /* libPods-myQQ.a */; };
 		F10822901CF4738E00A15E3F /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F108228F1CF4738E00A15E3F /* UIView+Common.m */; };
+		F145F0531CF548680038925B /* LinkManModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F145F0521CF548680038925B /* LinkManModel.m */; };
+		F145F0561CF54AD80038925B /* CustomSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F145F0551CF54AD80038925B /* CustomSearchVC.m */; };
 		F190F8291CF3E74C00B925CC /* LinkManVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F190F8281CF3E74C00B925CC /* LinkManVC.m */; };
 		F190F82D1CF3E77E00B925CC /* LinkManCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F190F82B1CF3E77E00B925CC /* LinkManCell.m */; };
 		F190F82E1CF3E77E00B925CC /* LinkManCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F190F82C1CF3E77E00B925CC /* LinkManCell.xib */; };
@@ -45,6 +47,10 @@
 		D46414B451CEF3089016DD0D /* libPods-myQQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myQQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F108228E1CF4738E00A15E3F /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
 		F108228F1CF4738E00A15E3F /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		F145F0511CF548680038925B /* LinkManModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManModel.h; sourceTree = "<group>"; };
+		F145F0521CF548680038925B /* LinkManModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkManModel.m; sourceTree = "<group>"; };
+		F145F0541CF54AD80038925B /* CustomSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSearchVC.h; sourceTree = "<group>"; };
+		F145F0551CF54AD80038925B /* CustomSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSearchVC.m; sourceTree = "<group>"; };
 		F190F8271CF3E74C00B925CC /* LinkManVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManVC.h; sourceTree = "<group>"; };
 		F190F8281CF3E74C00B925CC /* LinkManVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkManVC.m; sourceTree = "<group>"; };
 		F190F82A1CF3E77E00B925CC /* LinkManCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkManCell.h; sourceTree = "<group>"; };
@@ -130,6 +136,10 @@
 				F190F82A1CF3E77E00B925CC /* LinkManCell.h */,
 				F190F82B1CF3E77E00B925CC /* LinkManCell.m */,
 				F190F82C1CF3E77E00B925CC /* LinkManCell.xib */,
+				F145F0511CF548680038925B /* LinkManModel.h */,
+				F145F0521CF548680038925B /* LinkManModel.m */,
+				F145F0541CF54AD80038925B /* CustomSearchVC.h */,
+				F145F0551CF54AD80038925B /* CustomSearchVC.m */,
 			);
 			path = LinkMan;
 			sourceTree = "<group>";
@@ -271,6 +281,7 @@
 				TargetAttributes = {
 					F1D47D791CF3224D006EA68C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5LCCK392WL;
 					};
 					F1D47D921CF3224E006EA68C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -383,10 +394,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F145F0531CF548680038925B /* LinkManModel.m in Sources */,
 				F1D47DB51CF3294A006EA68C /* ChatVC.m in Sources */,
 				F190F8291CF3E74C00B925CC /* LinkManVC.m in Sources */,
 				F1D47D821CF3224D006EA68C /* AppDelegate.m in Sources */,
 				F1D47D7F1CF3224D006EA68C /* main.m in Sources */,
+				F145F0561CF54AD80038925B /* CustomSearchVC.m in Sources */,
 				F190F82D1CF3E77E00B925CC /* LinkManCell.m in Sources */,
 				F10822901CF4738E00A15E3F /* UIView+Common.m in Sources */,
 			);
@@ -532,11 +545,13 @@
 			baseConfigurationReference = 4ABA5A6A39CE071C877E81C5 /* Pods-myQQ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = myQQ/PrefixHeader.pch;
 				INFOPLIST_FILE = myQQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yxcps.myQQ;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunzhisheng.AsrOralDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -546,11 +561,13 @@
 			baseConfigurationReference = 3CFD2CE3DC2FF08E85EDDDA6 /* Pods-myQQ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = myQQ/PrefixHeader.pch;
 				INFOPLIST_FILE = myQQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yxcps.myQQ;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunzhisheng.AsrOralDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

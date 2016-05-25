@@ -26,6 +26,9 @@
     _headImageView.layer.cornerRadius = CGRectGetWidth(_headImageView.frame) * 0.5;
 }
 
++(CGFloat)getCellHeight{
+    return 70.0;
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

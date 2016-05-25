@@ -38,15 +38,17 @@ static NSString* identifier = @"tableviewCell";
         _tableview            = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
         _tableview.dataSource = self;
         _tableview.delegate   = self;
-//        [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([LinkManCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:identifier];
     }
     return _tableview;
 }
 
+
+
+
 #pragma mark - tableview delagete
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 70;
+    return [LinkManCell getCellHeight];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -68,11 +70,29 @@ static NSString* identifier = @"tableviewCell";
     return cell;
 }
 
+#pragma mark - 设置 tableViewCell横线左对齐
+
+-(void)viewDidLayoutSubviews{
+    if ([self.tableview respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tableview setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([self.tableview respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.tableview setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 @end
